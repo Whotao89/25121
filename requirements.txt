@@ -1,0 +1,14 @@
+# Quick package list / install command for this project (Vite + React + Tailwind + Firebase)
+# Run in project root:
+# npm install firebase react-snowfall framer-motion date-fns react-masonry-css
+# Tailwind (dev):
+# npm install -D tailwindcss postcss autoprefixer
+
+# Suggested single-line install (runtime + masonry):
+# npm install firebase react-snowfall framer-motion date-fns react-masonry-css
+
+# Dev dependencies for Tailwind
+# npm install -D tailwindcss postcss autoprefixer
+
+# (Optional) linter / formatter
+# npm install -D eslint prettier

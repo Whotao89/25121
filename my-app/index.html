@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Christmas Memory Wall 🎄 - Gửi lời yêu thương</title>
+    <meta name="description" content="Cùng để lại những lời chúc Giáng Sinh ấm áp trên bức tường kỷ niệm này nhé!" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1576919228236-a097c32a58be?auto=format&fit=crop&q=80" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,700;1,400&family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        /* Màu nền Gradient Đỏ mận -> Xanh đậm (Chủ đề Noel tối) */
+        background: linear-gradient(135deg, #1a472a 0%, #0f172a 100%);
+        /* Hoặc dùng màu đỏ: background: linear-gradient(135deg, #7f1d1d 0%, #374151 100%); */
+        
+        font-family: 'Mali', cursive; /* Font mặc định */
+        color: white;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* Style cho màn hình Loading trong lúc chờ React */
+      .initial-loader {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: 'Mountains of Christmas', cursive;
+        font-size: 2rem;
+      }
+      .snowflake {
+        font-size: 4rem;
+        animation: spin 3s linear infinite;
+      }
+      @keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="initial-loader">
+        <div class="snowflake">❄️</div>
+        <p>Đang gom tuyết... chờ xíu nhé!</p>
+      </div>
+    </div>
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
